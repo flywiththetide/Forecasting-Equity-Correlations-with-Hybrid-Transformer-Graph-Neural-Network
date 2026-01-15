@@ -8,6 +8,9 @@ The goal is to forecast **10-day ahead stock-stock correlations** (Fisher-z tran
 1.  **Temporal Encoder (Transformer)**: To capture detailed time-series dynamics of individual stocks (price, volume, technical indicators).
 2.  **Relational Encoder (GAT)**: To propagate information across the market graph, capturing how shocks transmit between correlated assets.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hPP697ldXMYIKfVRi_vYhQ2ZVVLUMp4s#scrollTo=dYi3j_II9zvt)
+[![Open In Colab (2)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TIyBkq2NcfVt4vclZuXAsI7IuxGBGuf9?usp=sharing)
+
 ## 2. Methodology
 
 ### 2.1 Dataset
