@@ -25,3 +25,52 @@
 2026-01-14 20:29:22,075 - THGNN - INFO - Generating Analysis...
 2026-01-14 20:29:22,244 - THGNN - INFO - Final Metrics: {'mae': 0.40510607, 'rmse': 0.51339656, 'corr': 0.4920019754882552}
 2026-01-14 20:29:28,240 - THGNN - INFO - Done! Results saved to /results
+2026-01-14 21:05:00,495 - THGNN - INFO - Running on cuda
+2026-01-14 21:05:00,866 - yfinance - ERROR - $ATVI: possibly delisted; no timezone found
+2026-01-14 21:05:00,870 - yfinance - ERROR - $SAND: possibly delisted; no timezone found
+2026-01-14 21:05:01,596 - yfinance - ERROR - HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: MAG"}}}
+2026-01-14 21:05:01,609 - yfinance - ERROR - $WRK: possibly delisted; no timezone found
+2026-01-14 21:05:01,749 - yfinance - ERROR - $DFS: possibly delisted; no timezone found
+2026-01-14 21:05:01,778 - yfinance - ERROR - $MAG: possibly delisted; no timezone found
+2026-01-14 21:05:03,366 - yfinance - ERROR - $X: possibly delisted; no timezone found
+2026-01-14 21:05:03,666 - yfinance - ERROR - $GPL: possibly delisted; no timezone found
+2026-01-14 21:05:03,797 - yfinance - ERROR - $LIO: possibly delisted; no price data found  (1d 2019-01-01 -> 2024-12-31)
+2026-01-14 21:05:04,066 - yfinance - ERROR - $BERY: possibly delisted; no timezone found
+2026-01-14 21:05:04,084 - yfinance - ERROR - $PVG: possibly delisted; no timezone found
+2026-01-14 21:05:04,642 - yfinance - ERROR - $BF.B: possibly delisted; no price data found  (1d 2019-01-01 -> 2024-12-31)
+2026-01-14 21:05:06,938 - yfinance - ERROR - $GATO: possibly delisted; no timezone found
+2026-01-14 21:05:08,292 - yfinance - ERROR - 
+12 Failed downloads:
+2026-01-14 21:05:08,292 - yfinance - ERROR - ['ATVI', 'SAND', 'WRK', 'DFS', 'MAG', 'X', 'GPL', 'BERY', 'PVG', 'GATO']: possibly delisted; no timezone found
+2026-01-14 21:05:08,292 - yfinance - ERROR - ['LIO', 'BF.B']: possibly delisted; no price data found  (1d 2019-01-01 -> 2024-12-31)
+2026-01-14 21:05:23,921 - THGNN - INFO - Preparing Train Data...
+2026-01-14 21:05:43,776 - THGNN - INFO - Running on cuda
+2026-01-14 21:05:43,999 - yfinance - ERROR - $BF.B: possibly delisted; no price data found  (1d 2019-01-01 -> 2024-12-31)
+2026-01-14 21:05:46,173 - yfinance - ERROR - $ATVI: possibly delisted; no timezone found
+2026-01-14 21:05:46,226 - yfinance - ERROR - HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: MAG"}}}
+2026-01-14 21:05:46,252 - yfinance - ERROR - $WRK: possibly delisted; no timezone found
+2026-01-14 21:05:46,786 - yfinance - ERROR - $MAG: possibly delisted; no timezone found
+2026-01-14 21:05:47,481 - yfinance - ERROR - $LIO: possibly delisted; no price data found  (1d 2019-01-01 -> 2024-12-31)
+2026-01-14 21:05:47,794 - yfinance - ERROR - $SAND: possibly delisted; no timezone found
+2026-01-14 21:05:48,933 - yfinance - ERROR - $PVG: possibly delisted; no timezone found
+2026-01-14 21:05:49,323 - yfinance - ERROR - $BERY: possibly delisted; no timezone found
+2026-01-14 21:05:49,452 - yfinance - ERROR - $GPL: possibly delisted; no timezone found
+2026-01-14 21:05:49,463 - yfinance - ERROR - $DFS: possibly delisted; no timezone found
+2026-01-14 21:05:50,050 - yfinance - ERROR - $X: possibly delisted; no timezone found
+2026-01-14 21:05:50,297 - yfinance - ERROR - $GATO: possibly delisted; no timezone found
+2026-01-14 21:05:50,957 - yfinance - ERROR - 
+12 Failed downloads:
+2026-01-14 21:05:50,957 - yfinance - ERROR - ['BF.B', 'LIO']: possibly delisted; no price data found  (1d 2019-01-01 -> 2024-12-31)
+2026-01-14 21:05:50,957 - yfinance - ERROR - ['ATVI', 'WRK', 'MAG', 'SAND', 'PVG', 'BERY', 'GPL', 'DFS', 'X', 'GATO']: possibly delisted; no timezone found
+2026-01-14 21:06:07,363 - THGNN - INFO - Preparing Train Data...
+2026-01-14 21:14:56,464 - THGNN - INFO - Running on cuda
+2026-01-14 21:15:03,273 - THGNN - INFO - Preparing Train Data...
+2026-01-14 21:16:05,914 - THGNN - INFO - Preparing Val Data...
+2026-01-14 21:16:22,046 - THGNN - INFO - Train samples: 1167, Val samples: 293
+2026-01-14 21:16:22,216 - THGNN - INFO - Model parameters: 3725059
+2026-01-14 21:16:23,017 - THGNN - INFO - Starting Training...
+2026-01-14 21:16:43,333 - THGNN - INFO - Epoch 1/2 | Train Loss: 0.1327 | Val Loss: 0.1234
+2026-01-14 21:17:03,582 - THGNN - INFO - Epoch 2/2 | Train Loss: 0.1256 | Val Loss: 0.1165
+2026-01-14 21:17:03,582 - THGNN - INFO - Generating Analysis...
+2026-01-14 21:17:03,859 - THGNN - INFO - Final Metrics: {'mae': 0.36060712, 'rmse': 0.45647284, 'corr': 0.20117338667737175}
+2026-01-14 21:17:17,307 - THGNN - INFO - Done! Results saved to /results

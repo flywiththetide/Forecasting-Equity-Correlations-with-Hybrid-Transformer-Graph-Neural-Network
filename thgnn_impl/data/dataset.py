@@ -33,7 +33,8 @@ class GraphDataset:
             
             # Correlation base (feature index 2 is approx returns or we recompute)
             # HACK: Using feature index 2 ('returns' in original features check)
-            rets_window = x_window[:, :, 2]
+            # x_window is [N, 30, F]. rets_window becomes [N, 30]
+            rets_window = x_window[:, :, 2].T # [30, N]
             
             df_rets = pd.DataFrame(rets_window, columns=self.tickers)
             corr_matrix = df_rets.corr().fillna(0).values
@@ -42,9 +43,11 @@ class GraphDataset:
             edge_index, edge_attr = build_graph(corr_matrix)
             
             # Target
+            # full_tensor is [Daily, N, F]
             future_window = self.full_tensor[t:t+self.pred_len, :, 2]
             if future_window.shape[0] < self.pred_len: continue
             
+            # future_window is [10, N]
             df_fut = pd.DataFrame(future_window, columns=self.tickers)
             target_corr = df_fut.corr().fillna(0).values
             

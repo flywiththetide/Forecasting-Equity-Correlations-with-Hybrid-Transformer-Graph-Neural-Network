@@ -24,7 +24,7 @@ def main():
     
     # 1. Load Data
     aligned_data = fetch_and_process_data(config.TICKERS, config.START_DATE, config.END_DATE)
-    tickers = config.TICKERS
+    tickers = list(aligned_data.keys()) # Valid tickers only
     
     # Create Dataset Wrapper
     dataset_wrapper = GraphDataset(aligned_data, tickers, seq_len=config.SEQ_LEN)
